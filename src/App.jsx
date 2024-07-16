@@ -42,7 +42,7 @@ const App = () => {
 	return (
 		<Container>
 			<Typography variant="h2" align="center" gutterBottom>
-				Rick and Morty Characters
+				Rick and Morty REACT
 			</Typography>
 			<Filter filter={filter} setFilter={setFilter} />
 			<Grid container spacing={3}>

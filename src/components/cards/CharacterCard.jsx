@@ -3,13 +3,13 @@ import { Card, CardContent, Typography, CardMedia } from "@mui/material";
 
 const CharacterCard = ({ character }) => {
 	return (
-		<Card>
-			<CardMedia
-				component="img"
-				height="180"
-				image={character.image}
-				alt={character.name}
-			/>
+		<Card sx={{ width: 300, height: 400, boxShadow: 3, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <CardMedia
+        component="img"
+        image={character.image}
+        alt={character.name}
+        sx={{ width: '80%', height: 'auto', margin: '16px 0' }} // Ajusta el ancho y el margen aquí
+      />
 			<CardContent>
 				<Typography variant="h6" component="div">
 					{character.name}
